@@ -6,27 +6,9 @@ This Dockerfile sets up an Apache HTTP Server on CentOS 7.
 
 # Instructions
 
-1. Create a `Dockerfile` in your project directory.
+Create a `Dockerfile` in your project directory.
+Copy and paste the following content into your `Dockerfile`:
 
-2. Copy and paste the following content into your `Dockerfile`:
-
-```Dockerfile
-# Use the official CentOS 7 image as the base image
-FROM centos:7
-
-# Update the system, install httpd, and clean up
-RUN yum -y update && \
-    yum -y install httpd && \
-    yum clean all
-
-# Copy the index.html file to the document root
-COPY index.html /var/www/html/
-
-# Expose port 8080 for incoming connections
-EXPOSE 8080
-
-# Start the Apache HTTP Server in the foreground
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 1. Place your `index.html` file in the same directory as the Dockerfile.
 
 2. Build the Docker image by running the following command in the terminal:
