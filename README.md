@@ -35,11 +35,4 @@ Copy and paste the following content into your `Dockerfile`:
 - The server listens on port 8080, which is exposed for incoming connections.
 - The Apache HTTP Server is started in the foreground, allowing the container to run continuously.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Author
-
-Dockerfile created by [Your Name](https://your-website-url-here.com).
 ![Running GIF](  https://raw.githubusercontent.com/trinib/trinib/82213791fa9ff58d3ca768ddd6de2489ec23ffca/images/footer.svg)
