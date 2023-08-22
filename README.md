@@ -4,7 +4,7 @@
 
 This Dockerfile sets up an Apache HTTP Server on CentOS 7.
 
-## Instructions
+# Instructions
 
 1. Create a `Dockerfile` in your project directory.
 
